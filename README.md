@@ -24,8 +24,6 @@
 ```
 ## Dependencies and Versions
 
-It's important to keep track of the dependencies used in your project. Here's a list of key dependencies and their versions:
-
 | Dependency         | Version     | Description                   |
 |--------------------|-------------|-------------------------------|
 | HTML              | 5     | Main code     |
