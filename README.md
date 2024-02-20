@@ -27,6 +27,9 @@
 | Dependency         | Version     | Description                   |
 |--------------------|-------------|-------------------------------|
 | HTML              | 5     | Main code     |
+| Css              | 3     | Main code     |
+| Js              | 5     | Main code     |
+| HTML              | 5     | Main code     |
 
 
 ## Overview
