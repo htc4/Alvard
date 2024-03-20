@@ -5,13 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const mainContainer = document.createElement('div');
     mainContainer.classList.add('main_contr');
 
-    // Create inner elements
-    // const innerDiv1 = document.createElement('div');
-    // innerDiv1.classList.add('item1');
-
-    // const titleSpan = document.createElement('span');
-    // titleSpan.classList.add('hd');
-    // titleSpan.textContent = 'INE';
 
     const innerDiv2 = document.createElement('div');
     innerDiv2.classList.add('item2');
@@ -59,13 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
     visitSpan.classList.add('vs');
     visitSpan.textContent = 'Visit our winery and celebrate this day with us';
 
-    // const buttons = ['SHOP', 'EVENTS', 'WINE CLUB', 'CONTACT', 'CART', 'LOG IN', 'ABOUT US', 'VISIT US'];
-    // const buttonSpans = buttons.map(label => {
-    //     const button = document.createElement('span');
-    //     button.classList.add('bs'); // Assuming all buttons have the same class for simplicity
-    //     button.textContent = label;
-    //     return button;
-    // });
 
     // Apply CSS styles
     mainContainer.style.fontFamily = 'Inika, sans-serif'; // Apply font-family to the main container
@@ -76,8 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
     innerDiv4.appendChild(subInnerDiv3);
 
     // Append sub-inner elements to their respective parent elements
-    // mainContainer.appendChild(innerDiv1);
-    // mainContainer.appendChild(titleSpan);
     mainContainer.appendChild(innerDiv2);
     mainContainer.appendChild(innerDiv3);
     mainContainer.appendChild(innerDiv4);
@@ -88,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
     mainContainer.appendChild(readMoreSpan2);
     mainContainer.appendChild(dateSpan);
     mainContainer.appendChild(visitSpan);
-    // buttonSpans.forEach(buttonSpan => mainContainer.appendChild(buttonSpan)); // Append button spans
 
     // Append the main container to the body of the document
     document.body.appendChild(mainContainer);

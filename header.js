@@ -30,56 +30,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const subInnerDiv3 = document.createElement('div');
     subInnerDiv3.classList.add('sitem3');
 
-    // const infoSpan1 = document.createElement('span');
-    // infoSpan1.classList.add('is1');
-    // infoSpan1.textContent = 'Since 1910, Robert Royce Wines have been a favorite throughout Italy';
-
-    // const infoSpan2 = document.createElement('span');
-    // infoSpan2.classList.add('is2');
-    // infoSpan2.textContent = 'The taste of real wine';
-
-    // const infoSpan3 = document.createElement('span');
-    // infoSpan3.classList.add('is3');
-    // infoSpan3.textContent = 'We invent our winery for you';
-
-    // const readMoreSpan1 = document.createElement('span');
-    // readMoreSpan1.classList.add('rms1');
-    // readMoreSpan1.textContent = 'read more';
-
-    // const readMoreSpan2 = document.createElement('span');
-    // readMoreSpan2.classList.add('rms2');
-    // readMoreSpan2.textContent = 'read more';
-
-    // const dateSpan = document.createElement('span');
-    // dateSpan.classList.add('ds');
-    // dateSpan.textContent = 'May 22 2024';
-
-    // const visitSpan = document.createElement('span');
-    // visitSpan.classList.add('vs');
-    // visitSpan.textContent = 'Visit our winery and celebrate this day with us';
-
     const buttons = ['SHOP', 'EVENTS', 'WINE CLUB', 'CONTACT', 'CART', 'LOG IN', 'ABOUT US', 'VISIT'];
     const buttonSpans = buttons.map(label => {
         const button = document.createElement('span');
-        button.classList.add('bs'); // Assuming all buttons have the same class for simplicity
+        button.classList.add('bs');
         button.textContent = label;
-        button.addEventListener('click', () => {
-            console.log("suc1_____________________")
+        // console.log(' 1  button:', button);
+            document.addEventListener('click', () => {
+                //  console.log('Button clicked:', label);
+                // for() 
             switch (label) {
                 case 'SHOP':
-                    window.location.href = './shop.html';
+                    // window.location.href = './shop.html';
+                    console.log('SHOP Button clicked:', label); 
                     break;
                 case 'EVENTS':
-                    window.location.href = 'events.html';
+                    // window.location.href = './events.html'; 
+                    console.log('EVENTS Button clicked:', label); 
                     break;
                 case 'CONTACT':
-                    window.location.href = 'contact.html';
+                    // window.location.href = './contact.html'; 
+                    console.log('CONTACT Button clicked:', label); 
                     break;
                 case 'WINE CLUB':
-                    window.location.href = 'wineclub.html';
+                    // window.location.href = './wineclub.html'; 
+                    console.log('WINE CLUB Button clicked:', label); 
                     break;
                 case 'CART':
-                    window.location.href = 'cart.html';
+                    // window.location.href = './cart.html';
+                    console.log('CART Button clicked:', label); 
                     break;
                 default:
                     break;
@@ -88,11 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return button;
     });
 
-    // Assuming there's a container where you want to append these buttons
-    // const container = document.getElementById('buttonContainer'); // Change 'buttonContainer' to the actual ID of your container
-    // buttonSpans.forEach(button => {
-    //     container.appendChild(button);
-    // });
+    // Append the button spans to the main container
+    buttonSpans.forEach(buttonSpan => {
+        document.body.appendChild(buttonSpan);
+    });
+
 
 
     // Apply CSS styles
@@ -105,20 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Append sub-inner elements to their respective parent elements
     mainContainer.appendChild(innerDiv1);
-    // mainContainer.appendChild(titleSpan);
-    // mainContainer.appendChild(innerDiv2);
-    // mainContainer.appendChild(innerDiv3);
-    // mainContainer.appendChild(innerDiv4);
-    // mainContainer.appendChild(infoSpan1);
-    // mainContainer.appendChild(infoSpan2);
-    // mainContainer.appendChild(infoSpan3);
-    // mainContainer.appendChild(readMoreSpan1);
-    // mainContainer.appendChild(readMoreSpan2);
-    // mainContainer.appendChild(dateSpan);
-    // mainContainer.appendChild(visitSpan);
     buttonSpans.forEach(buttonSpan => mainContainer.appendChild(buttonSpan)); // Append button spans
 
-    // Append the main container to the body of the document
     document.body.appendChild(mainContainer);
 
     // Function to replace class names
