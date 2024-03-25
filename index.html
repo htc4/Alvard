@@ -1,15 +1,229 @@
-<!DOCTYPE html>
-<html>
+<!-- <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Inika&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
     <link href="./css/main.css" rel="stylesheet" />
-    <title>Document</title>
 </head>
+
 <body>
-    <script src="./header.js"></script>
-    <script src="./script.js"></script>
-    <!-- <script src="./futer.js"></script> -->
-    
+    <div class="main_contr">
+        <div class="item1">
+            <span class="hd">INE</span>
+        </div>
+        <span class="bs" data-url="./shop.html">SHOP</span>
+        <span class="bs" data-url="./events.html">EVENTS</span>
+        <span class="bs" data-url="./wineclub.html">WINE CLUB</span>
+        <span class="bs" data-url="./contact.html">CONTACT</span>
+        <span class="bs" data-url="./cart.html">CART</span>
+        <span class="bs" data-url="./login.html">LOG IN</span>
+        <span class="bs" data-url="./aboutus.html">ABOUT US</span>
+        <span class="bs" data-url="./visit.html">VISIT</span>
+    </div>
+
+
+    <div class="mc">
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="i4">
+            <div class="sitem1"></div>
+            <div class="sitem2"></div>
+            <div class="sitem3"></div>
+        </div>
+        <span class="is1">Since 1910, Robert Royce Wines have been a favorite throughout Italy</span>
+        <span class="is2">The taste of real wine</span>
+        <span class="is3">We invent our winery for you</span>
+        <span class="rms1">read more</span>
+        <span class="rms2">read more</span>
+        <span class="ds">May 22 2024</span>
+        <span class="vs">Visit our winery and celebrate this day with us</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttonSpans = document.querySelectorAll('.bs');
+
+            buttonSpans.forEach(button => {
+                button.addEventListener('click', function () {
+                    const url = this.getAttribute('data-url');
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            });
+
+            function replaceClassNames() {
+                const elements = document.querySelectorAll('[class]');
+                elements.forEach(element => {
+                    const classNames = element.classList.value.split(' ');
+                    classNames.forEach(className => {
+                        const newClassName = className.replace(/[^a-zA-Z0-9-_]/g, '_'); // Replace all non-alphanumeric characters with underscores
+                        element.classList.remove(className);
+                        element.classList.add(newClassName);
+                    });
+                });
+            }
+
+            replaceClassNames();
+        });
+    </script>
 </body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <link href="./css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main_contr">
+        <div class="item1">
+            <span class="hd">INE</span>
+        </div>
+        <span class="bs" id="shop" onclick="handleClick('shop')">SHOP</span>
+        <span class="bs" id="events" onclick="handleClick('events')">EVENTS</span>
+        <span class="bs" id="wineClub" onclick="handleClick('wineClub')">WINE CLUB</span>
+        <span class="bs" id="contact" onclick="handleClick('contact')">CONTACT</span>
+        <span class="bs" id="cart" onclick="handleClick('cart')">CART</span>
+        <span class="bs" id="login" onclick="handleClick('login')">LOG IN</span>
+        <span class="bs" id="aboutUs" onclick="handleClick('aboutUs')">ABOUT US</span>
+        <span class="bs" id="visit" onclick="handleClick('visit')">VISIT</span>
+    </div>
+
+
+
+    <!-- <div class="mc">
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="i4">
+            <div class="sitem1"></div>
+            <div class="sitem2"></div>
+            <div class="sitem3"></div>
+        </div>
+        <span class="is1">Since 1910, Robert Royce Wines have been a favorite throughout Italy</span>
+        <span class="is2">The taste of real wine</span>
+        <span class="is3">We invent our winery for you</span>
+        <span class="rms1">read more</span>
+        <span class="rms2">read more</span>
+        <span class="ds">May 22 2024</span>
+        <span class="vs">Visit our winery and celebrate this day with us</span>
+    </div> -->
+
+    <script>
+        function loadContent(url) {
+    fetch(url)
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('content').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading content:', error));
+}
+        // Functions for handling clicks on each span
+        function handleShop() {
+            // alert("You clicked on SHOP!");
+            window.location.href = './shop.html';            
+        }
+
+        function handleEvents() {
+            alert("You clicked on EVENTS!");
+            // Add your logic for EVENTS here
+        }
+
+        function handleWineClub() {
+            alert("You clicked on WINE CLUB!");
+            // Add your logic for WINE CLUB here
+        }
+
+        function handleContact() {
+            alert("You clicked on CONTACT!");
+            // Add your logic for CONTACT here
+        }
+
+        function handleCart() {
+            alert("You clicked on CART!");
+            // Add your logic for CART here
+        }
+
+        function handleLogin() {
+            alert("You clicked on LOG IN!");
+            // Add your logic for LOG IN here
+        }
+
+        function handleAboutUs() {
+            alert("You clicked on ABOUT US!");
+            // Add your logic for ABOUT US here
+        }
+
+        function handleVisit() {
+            alert("You clicked on VISIT!");
+            // Add your logic for VISIT here
+        }
+
+        function handleClick(id) {
+            // Remove active class from all .bs elements
+            document.querySelectorAll('.bs').forEach(element => {
+                element.classList.remove('active');
+            });
+
+            // Add active class to the clicked element
+            document.getElementById(id).classList.add('active');
+
+            // Call the corresponding function based on the clicked element
+            switch (id) {
+                case 'shop':
+                    handleShop();
+                    break;
+                case 'events':
+                    handleEvents();
+                    break;
+                case 'wineClub':
+                    handleWineClub();
+                    break;
+                case 'contact':
+                    handleContact();
+                    break;
+                case 'cart':
+                    handleCart();
+                    break;
+                case 'login':
+                    handleLogin();
+                    break;
+                case 'aboutUs':
+                    handleAboutUs();
+                    break;
+                case 'visit':
+                    handleVisit();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
+        // // Function to replace class names
+        // function replaceClassNames() {
+        //     const elements = document.querySelectorAll('[class]');
+        //     elements.forEach(element => {
+        //         const classNames = element.classList.value.split(' ');
+        //         classNames.forEach(className => {
+        //             const newClassName = className.replace(/[^a-zA-Z0-9-_]/g, '_'); // Replace all non-alphanumeric characters with underscores
+        //             element.classList.remove(className);
+        //             element.classList.add(newClassName);
+        //         });
+        //     });
+        // }
+
+        // // Replace class names after DOM content is loaded
+        // replaceClassNames();
+    </script>
+</body>
+
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <object id="ob1" data="./index.html" width="100%" height="100%"></object>
+    <script>
+        // Function to monitor changes in the data attribute and redirect if necessary
+        function monitorDataChange() {
+            // Get the object element
+            var objectElement = document.getElementById("ob1");
+            
+            // Create a MutationObserver to monitor changes in attributes
+            var observer = new MutationObserver(function(mutationsList) {
+                mutationsList.forEach(function(mutation) {
+                    // Check if the 'data' attribute has changed
+                    if (mutation.attributeName === 'data') {
+                        // Get the new value of the 'data' attribute
+                        var newData = mutation.target.getAttribute('data');
+                        
+                        // Check if the new value is 'shop.html' and redirect if true
+                        if (newData === './shop.html') {
+                            window.location.href = './shop.html';
+                        }
+                    }
+                });
+            });
+            
+            // Start observing changes in the 'data' attribute
+            observer.observe(objectElement, { attributes: true });
+        }
+        
+        // Call the function to start monitoring data changes
+        monitorDataChange();
+    </script>
+    
+</body>
+</html>
