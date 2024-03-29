@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+}
+
+@import url("https://unpkg.com/open-props");
+
+/* Variables */
+:root {
+    --page-img: url(../images/login.jpg);
+    --break-sm: 36em;
+    --cr-rock: hsl(10, 15%, 23%);
+    --cr-rock-2: hsl(10, 15%, 30%);
+    --cr-tia-maria: hsl(15, 88%, 41%);
+    --cr-white: hsl(0, 0%, 100%);
+    --cr-primary: var(--cr-rock);
+    --zx-neg-400: -4000;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline-offset: 4px;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+/* Page */
+.page {
+    color: var(--cr-white);
+    background: no-repeat center / cover var(--page-img);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--font-sans);
+}
+
+/* Login Form */
+.login-form {
+    color: var(--cr-primary);
+    position: relative;
+    width: 25em;
+    padding: 2em;
+    border: 1px solid hsla(0, 0%, 100%, 0.4);
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Adjust background transparency */
+}
+
+.login-form__title {
+    margin-bottom: 1em;
+    /* Adjust spacing */
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.login-form__label {
+    margin-bottom: 1em;
+    /* Adjust spacing */
+    display: block;
+}
+
+.login-form__input {
+    color: inherit;
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    /* Adjust spacing */
+    border: 1px solid #ccc;
+    /* Add border for clarity */
+    border-radius: 0.5em;
+    /* Adjust border radius */
+}
+
+.login-form__footer {
+    margin-top: 1em;
+    /* Adjust spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.login-form__link:hover {
+    text-decoration: underline;
+}
+
+.primary-btn {
+    color: var(--cr-white);
+    background-color: var(--cr-primary);
+    padding: 0.8em 1.2em;
+    /* Adjust padding */
+    border: none;
+    border-radius: 0.5em;
+    /* Adjust border radius */
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: var(--cr-tia-maria);
+}
+
+.sr-only {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border-width: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}

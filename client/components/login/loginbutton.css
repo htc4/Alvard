@@ -1,0 +1,8 @@
+#logbutton {
+    background-color: rgb(158, 85, 49);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
