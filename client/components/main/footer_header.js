@@ -19,7 +19,7 @@ function createMenu() {
     // Create logo link and image
     const logoLink = document.createElement('a');
     logoLink.classList.add('logo-link');
-    logoLink.href = '../index.html';
+    // logoLink.href = '../index.html';
     const logoImg = document.createElement('img');
     logoImg.src = '../images/logo.png';
     logoImg.alt = 'Logo';
