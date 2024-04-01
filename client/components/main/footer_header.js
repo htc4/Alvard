@@ -9,7 +9,7 @@ const menuItems = [
     { id: 'events', text: 'EVENTS', link: '../events/events.html' },
     { id: 'wine-club', text: 'WINE CLUB', link: '../wineclub/wineclub.html' },
     { id: 'contact', text: 'CONTACT', link: '#' },
-    { id: 'cart', text: 'CART', link: '#' },
+    { id: 'cart', text: 'CART', link: '../carts/carts.html' },
     { id: 'log-in', text: 'LOG IN', link: '../login/login.html' },
     { id: 'about-us', text: 'ABOUT US', link: '../aboutus/about.html' },
     { id: 'visit', text: 'VISIT', link: '../index.html' }
@@ -19,7 +19,7 @@ const menuItems2 = [
     { id: 'events', text: 'EVENTS', link: './events/events.html' },
     { id: 'wine-club', text: 'WINE CLUB', link: './wineclub/wineclub.html' },
     { id: 'contact', text: 'CONTACT', link: '#' },
-    { id: 'cart', text: 'CART', link: '#' },
+    { id: 'cart', text: 'CART', link: './carts/carts.html' },
     { id: 'log-in', text: 'LOG IN', link: './login/login.html' },
     { id: 'about-us', text: 'ABOUT US', link: './aboutus/about.html' },
     { id: 'visit', text: 'VISIT', link: './index.html' }
