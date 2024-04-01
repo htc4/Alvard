@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000 !important;
+    color: aliceblue;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.picture {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.picture img {
+    display: block;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text {
+    position: relative;
+    z-index: 1;
+}
+
+.clickable-divs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Add some space between the divs and the pictures */
+}
+
+.text a{
+    color:rgb(172, 103, 38);
+}
+.clickable-divs {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Adjust width as needed */
+}
+
+.clickable-div {
+    width: 30%;
+    height: 1vw; /* Adjust height as needed */
+    background-color: white; /* Set default background color to white */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.clickable-div.active {
+    background-color: #ccc; /* Set background color to gray for the active div */
+}
+
+@media screen and (max-width: 768px) {
+    
+    .clickable-divs {
+        bottom: 10px; /* Adjust as needed */
+        flex-wrap: wrap;
+    }
+
+    .clickable-div {
+        width: 30%;
+        height: 1vw; /* Adjust height as needed */
+        margin-bottom: 10px; /* Add margin between divs */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    
+    .clickable-divs {
+        position: absolute;
+        bottom: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        width: 90%; /* Adjust width as needed */
+    }
+
+    .clickable-div {
+        width: 30%;
+        height: 1vw; /* Adjust height as needed */
+        background-color: white; /* Set default background color to white */
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
