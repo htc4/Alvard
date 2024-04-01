@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function createLoginButton() {
     if (!document.getElementById('logbutton')) {
-        var button = document.createElement('button');
+        let button = document.createElement('button');
         button.setAttribute('id', 'logbutton');
         button.innerHTML = 'Login';
-        var container = document.querySelector('.login-form__footer');
+        let container = document.querySelector('.login-form__footer');
         container.appendChild(button);
         console.log('Login button created');
         button.addEventListener('click', handleLogin); // Attach click event listener
@@ -22,8 +22,8 @@ function handleLogin() {
 
 // Function to handle user authentication
 function authenticateUser() {
-    var email = document.getElementById('emailInput').value;
-    var password = document.getElementById('passwordInput').value;
+    let email = document.getElementById('emailInput').value;
+    let password = document.getElementById('passwordInput').value;
 
     // Define your SQL query for authentication
     const selectQuery = 'SELECT * FROM "user" WHERE email = $1 AND password = $2';

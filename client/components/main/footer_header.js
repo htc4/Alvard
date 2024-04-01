@@ -1,5 +1,8 @@
 // JavaScript (script.js)
 
+// Define the image URL
+
+
 // Menu items data
 const menuItems = [
     { id: 'shop', text: 'SHOP', link: '../shop/shop.html' },
@@ -19,18 +22,19 @@ function createMenu() {
     // Create logo link and image
     const logoLink = document.createElement('a');
     logoLink.classList.add('logo-link');
-    // logoLink.href = '../index.html';
     const logoImg = document.createElement('img');
-    logoImg.src = '../images/logo.png';
+    imageUrl = '../images/logo.png'
+    logoImg.src = imageUrl; // Use the imageUrl variable
     logoImg.alt = 'Logo';
     logoImg.classList.add('logo');
     logoLink.appendChild(logoImg);
     menuContainer.appendChild(logoLink);
 
     // Create menu toggle button
+    menuicon = '&#9776;'
     const menuToggle = document.createElement('div');
     menuToggle.classList.add('menu-toggle');
-    menuToggle.innerHTML = '&#9776;';
+    menuToggle.innerHTML = menuicon;
     menuContainer.appendChild(menuToggle);
 
     // Create menu items container
