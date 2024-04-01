@@ -48,7 +48,9 @@
 .menu-item:hover {
     background-color: #444;
 }
-
+img{
+    transform: rotate(180deg);
+}
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
     .menu-items {

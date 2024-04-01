@@ -28,9 +28,10 @@ function createMenu() {
     menuContainer.appendChild(logoLink);
 
     // Create menu toggle button
+    menuicon = '&#9776;'
     const menuToggle = document.createElement('div');
     menuToggle.classList.add('menu-toggle');
-    menuToggle.innerHTML = '&#9776;';
+    menuToggle.innerHTML = menuicon;
     menuContainer.appendChild(menuToggle);
 
     // Create menu items container
