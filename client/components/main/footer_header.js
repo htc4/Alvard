@@ -6,8 +6,8 @@ let imageUrl = '../images/logo.png';
 // Menu items data
 const menuItems = [
     { id: 'shop', text: 'SHOP', link: '../shop/shop.html' },
-    { id: 'events', text: 'EVENTS', link: '#' },
-    { id: 'wine-club', text: 'WINE CLUB', link: '#' },
+    { id: 'events', text: 'EVENTS', link: '../events/events.html' },
+    { id: 'wine-club', text: 'WINE CLUB', link: '../wineclub/wineclub.html' },
     { id: 'contact', text: 'CONTACT', link: '#' },
     { id: 'cart', text: 'CART', link: '#' },
     { id: 'log-in', text: 'LOG IN', link: '../login/login.html' },
@@ -16,8 +16,8 @@ const menuItems = [
 ];
 const menuItems2 = [
     { id: 'shop', text: 'SHOP', link: './shop/shop.html' },
-    { id: 'events', text: 'EVENTS', link: '#' },
-    { id: 'wine-club', text: 'WINE CLUB', link: '#' },
+    { id: 'events', text: 'EVENTS', link: './events/events.html' },
+    { id: 'wine-club', text: 'WINE CLUB', link: './wineclub/wineclub.html' },
     { id: 'contact', text: 'CONTACT', link: '#' },
     { id: 'cart', text: 'CART', link: '#' },
     { id: 'log-in', text: 'LOG IN', link: './login/login.html' },

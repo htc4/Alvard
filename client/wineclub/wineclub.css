@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000 !important;
+    color: aliceblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 100%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.button_club {
+    display: inline-block;
+    background-color: rgb(172, 103, 38);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 6%px;
+    margin-left: 39%;
+}
+
+.button_club img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.button_club:hover {
+    background-color: rgb(172, 103, 38);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000 !important;
+    color: aliceblue;
+    text-align: center; /* Center align the button */
+}
+
+/* Default button styles */
+.button_club {
+    display: inline-block;
+    background-color: rgb(172, 103, 38);
+    color: #fff;
+    padding: 2.5% 5%; /* Adjust padding for responsive design */
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 6%;
+    margin-left: 39%;
+}
+
+.button_club img {
+    vertical-align: middle;
+    margin-right: 1%; /* Adjust margin for responsive design */
+}
+
+.button_club:hover {
+    background-color: rgb(172, 103, 38);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .button_club {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .button_club {
+        padding: 6px 12px; /* Further adjust padding for even smaller screens */
+        margin-top: 10px; /* Further adjust margin for even smaller screens */
+    }
+}
+
+.button_club a{
+    color:white;
+}
