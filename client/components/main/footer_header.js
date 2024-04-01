@@ -1,8 +1,11 @@
 // JavaScript (script.js)
 
+// Define the image URL
+
+
 // Menu items data
 const menuItems = [
-    { id: 'shop', text: 'SHOP', link: 'shop.html' },
+    { id: 'shop', text: 'SHOP', link: '#' },
     { id: 'events', text: 'EVENTS', link: '#' },
     { id: 'wine-club', text: 'WINE CLUB', link: '#' },
     { id: 'contact', text: 'CONTACT', link: '#' },
@@ -19,9 +22,9 @@ function createMenu() {
     // Create logo link and image
     const logoLink = document.createElement('a');
     logoLink.classList.add('logo-link');
-    // logoLink.href = '../index.html';
     const logoImg = document.createElement('img');
-    logoImg.src = '../images/logo.png';
+    imageUrl = '../images/logo.png'
+    logoImg.src = imageUrl; // Use the imageUrl variable
     logoImg.alt = 'Logo';
     logoImg.classList.add('logo');
     logoLink.appendChild(logoImg);
