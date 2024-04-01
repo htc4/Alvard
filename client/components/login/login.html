@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../components/main/footer_header.css">
+    <link rel="stylesheet" href="../components/login/loginbutton.css">
+</head>
+
+<body>
+
+    <div id="menuContainer" class="menu-container"></div>
+    <div class="page">
+        <main class="main page__main">
+            <form class="login-form main__login-form" action="javascript:void(0)" method="POST">
+                <h3 class="login-form__title">Sign In</h3>
+                <label class="login-form__label" for="uname">
+                    <span class="sr-only">Email</span>
+                    <input class="login-form__input" type="email" id="emailInput" name="uname" value="" placeholder="Email"
+                        required>
+                </label>
+                <label class="login-form__label" for="psw">
+                    <span class="sr-only">Password</span>
+                    <input class="login-form__input" type="password" id="passwordInput" name="psw" value="" placeholder="Password"
+                        required>
+                </label>
+                <div id="logbutton"> Log In</div>
+                <div class="login-form__footer">
+                    <a class="login-form__link" href="#">Forget Password?</a>
+                    <a class="login-form__link">Sign Up</a>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="../components/main/footer_header.js"></script>
+    <script src="../components/login/loginbutton.js"></script>
+    <script src="../../server/server.js"></script>
+</body>
+
+</html>
