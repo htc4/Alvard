@@ -2,13 +2,13 @@
 
 // Menu items data
 const menuItems = [
-    { id: 'shop', text: 'SHOP', link: 'shop.html' },
+    { id: 'shop', text: 'SHOP', link: '../shop/shop.html' },
     { id: 'events', text: 'EVENTS', link: '#' },
     { id: 'wine-club', text: 'WINE CLUB', link: '#' },
     { id: 'contact', text: 'CONTACT', link: '#' },
     { id: 'cart', text: 'CART', link: '#' },
-    { id: 'log-in', text: 'LOG IN', link: '#' },
-    { id: 'about-us', text: 'ABOUT US', link: '#' },
+    { id: 'log-in', text: 'LOG IN', link: '../login/login.html' },
+    { id: 'about-us', text: 'ABOUT US', link: '../aboutus/about.html' },
     { id: 'visit', text: 'VISIT', link: '#' }
 ];
 
