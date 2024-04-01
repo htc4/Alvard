@@ -2,20 +2,18 @@
 
 .menu-container {
     display: flex;
-    justify-content: space-between; /* Distribute items to left and right */
+    justify-content:center; /* Distribute items to left and right */
     align-items: center;
     background-color: #000000;
     color: white;
-    padding: 10px;
+    padding: 11px;
 }
 
 .logo-link {
     display: block;
 }
 
-a img{
-    background-image: url(/client/images/logo.png);
-}
+
 .logo {
     height: 50px; /* Adjust the height as needed */
     width: auto;
@@ -33,6 +31,8 @@ a img{
     justify-content: flex-end; /* Align menu items to the right by default */
     align-items: center;
     order: 3; /* Display menu items last on the right */
+    font-size: 180%;
+
 }
 
 .menu-item {
@@ -51,7 +51,7 @@ a img{
 .menu-item:hover {
     background-color: #444;
 }
-img{
+a img{
     transform: rotate(180deg);
 }
 /* Media Query for responsiveness */
@@ -71,6 +71,8 @@ img{
         width: 100%;
         text-align: center;
         order: 2; /* Display menu items below the toggle button */
+        font-size: 100%;
+
     }
 
     .menu-items.active {
