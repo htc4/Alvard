@@ -21,17 +21,21 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #f8f9fa; /* Light gray background */
-    color: #333; /* Dark text color */
+    background-color: #f8f9fa;
+    /* Light gray background */
+    color: #333;
+    /* Dark text color */
 }
 
 #filterInput:focus {
     outline: none;
-    border-color: #007bff; /* Blue border color when focused */
+    border-color: #007bff;
+    /* Blue border color when focused */
 }
 
 #filterInput::placeholder {
-    color: #aaa; /* Light gray placeholder text color */
+    color: #aaa;
+    /* Light gray placeholder text color */
 }
 
 
@@ -71,4 +75,10 @@ body {
 
 .row.row-cols-1.row-cols-md-4.g-4 {
     background-color: black;
+}
+
+
+.card-title {
+
+    color: white !important;
 }
