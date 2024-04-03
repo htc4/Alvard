@@ -131,6 +131,7 @@ function setActiveMenuItem(itemId) {
     });
 }
 
+
 // Call createMenu() function to initialize the menu
 if (document.getElementById("menuContainer")) {
     createMenu();
