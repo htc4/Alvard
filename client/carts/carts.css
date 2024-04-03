@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000 !important;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(172, 103, 38);
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.gallery img {
+    width: 30%; /* Adjust width for responsiveness */
+    margin: 10px; /* Adjust margin for spacing between images */
+}
+
+@media screen and (max-width: 768px) {
+    div.gallery img {
+        width: 30%; /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.gallery img {
+        width: 10%; /* Adjust width for even smaller screens */
+    }
+}
+
+a img{
+    transform: rotate(360deg);
+}
